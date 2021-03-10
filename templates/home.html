@@ -1,0 +1,180 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title> {{ title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    
+    <div class="container">
+        
+    <nav id="main-nav" class="flex items-cen justify">
+        
+        <div class="left flex items-cen" style="background-color: #DC143C;">
+            <a href="#" style="font-size:22px; font-weight: bold;" >Gifts Dukhan</a>
+               
+               <a href="practice.html" style="font-size:22px; font-weight: bold;">Categories</a>
+               <a href="#about" style="font-size:22px; font-weight: bold;">Anniversary</a>
+               <a href="#skills" style="font-size:22px; font-weight: bold;">Birthday</a>
+                 <a href="#skills" style="font-size:22px; font-weight: bold;">About</a>
+               <a href="contact-us.html" style="font-size:22px; font-weight: bold;">Contact Us</a>
+               
+              <a href="login.html" style="font-size:22px; font-weight: bold;">Login</a>
+            
+   </div>
+        
+         
+       
+    </nav>
+    </div>
+    </div>
+ <div class="slider-frame">
+
+         <div class="slide-images">
+            <div class="img-container">
+             <img src="{{url_for('static', filename='g1.png')}}" align="middle" />
+            </div>
+            <div class="img-container">
+              <img src="{{url_for('static', filename='g2.png')}}" align="middle" />
+            </div>
+              <div class="img-container">
+              <img src="{{url_for('static', filename='g3.png')}}" align="middle" />
+            </div>
+            
+       
+         </div>
+     </div>
+
+     <center><h1>Browse Gifts by category</h1></center>
+
+     <div class="row">
+                  <div class="column">
+        
+                         <div class="card">
+                           <img src="{{url_for('static', filename='g4.png')}}"/> 
+                            
+                         </div>
+                  </div>
+        
+                  <div class="column">
+     
+                      <div class="card">
+                           <img src="{{url_for('static', filename='g5.png')}}"/> 
+                            
+                      </div>
+                 </div>
+                
+                 <div class="column">
+                        <div class="card">
+                       <img src="{{url_for('static', filename='g6.png')}}"/> 
+                           
+                         </div>
+                </div>
+              
+     </div>
+
+     <div class="row">
+                        <div class="column">
+                                 <div class="card">
+                                          <img src="{{url_for('static', filename='g7.png')}}"/> 
+                                          
+                                 </div>
+                         </div>
+               
+                         <div class="column">
+                                     <div class="card">
+                                             <img src="{{url_for('static', filename='g8.png')}}"/> 
+                                          
+                                     </div>
+                         </div>
+                    
+                         <div class="column">
+                                     <div class="card">
+                                        <img src="{{url_for('static', filename='g9.png')}}"/> 
+                                          
+                                     </div>
+                        </div>
+    </div>
+  <br>
+   <center><h1>Send Gifts Worldwide</h1> 
+   	  <div class="grey">
+ 	 <div class="row">
+						
+						<div class="column">	
+						  <div class="card1">
+                           <img src="{{url_for('static', filename='aus.png')}}"/ > 
+                             
+                         </div>
+                          <button class="btn">Australia</button>
+                     </div>
+
+                     <div class="column">
+        
+                          <div class="card1">
+                           <img src="{{url_for('static', filename='canada.png')}}"/> 
+                           </div>
+                         <button class="btn">Canada</button>
+                     </div>
+                             <div class="column">
+        
+     <div class="card1">
+  <img src="{{url_for('static', filename='singapore.png')}}"/> </div>
+  <button class="btn">Singapore</button>
+  </div>
+
+                        
+</div>
+<div class="row">
+    
+   
+     <div class="column">
+        
+        <div class="card1">
+   <img src="{{url_for('static', filename='uae.png')}}"/> </div>
+  <button class="btn">UAE</button>
+  </div>
+     
+       
+         
+        	 <div class="column">
+        <div class="card1">
+ <img src="{{url_for('static', filename='uk.png')}}"/> </div>
+  <button class="btn">UK</button>
+  </div>
+     <div class="column">
+        <div class="card1">
+   <img src="{{url_for('static', filename='usa.png')}}"/>
+    </div>
+    <button class="btn">USA</button>
+ 
+  </div>
+</div>
+</div>
+</center>
+
+</body>
+</html>
+</body>
+</html>				 
